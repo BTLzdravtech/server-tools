@@ -2,7 +2,7 @@ name: "Sync Fork Branch 14.0"
 
 on:
   schedule:
-    - cron: '0 8 * * 1' # on Monday at 8:00
+    - cron: '0 8 * * 4' # on Thursday at 8:00
   workflow_dispatch: # on button click
 
 jobs:
