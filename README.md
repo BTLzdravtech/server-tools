@@ -65,10 +65,11 @@ addon | version | maintainers | summary
 [fetchmail_incoming_log](fetchmail_incoming_log/) | 14.0.1.0.0 |  | Log all messages received, before they start to be processed.
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 14.0.1.0.0 |  | If fetching mails gives error, send an email to sender
 [fetchmail_notify_error_to_sender_test](fetchmail_notify_error_to_sender_test/) | 14.0.1.0.0 |  | Test for Fetchmail Notify Error to Sender
-[html_image_url_extractor](html_image_url_extractor/) | 14.0.1.0.0 |  | Extract images found in any HTML field
-[html_text](html_text/) | 14.0.1.0.0 |  | Generate excerpts from any HTML field
+[html_image_url_extractor](html_image_url_extractor/) | 14.0.1.0.1 |  | Extract images found in any HTML field
+[html_text](html_text/) | 14.0.1.0.1 |  | Generate excerpts from any HTML field
 [iap_alternative_provider](iap_alternative_provider/) | 14.0.1.0.0 | [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module for providing alternative provider for iap apps
 [jsonifier](jsonifier/) | 14.0.1.1.0 |  | JSON-ify data for all models
+[jsonifier_stored](jsonifier_stored/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Pre-compute and store JSON data on any model
 [letsencrypt](letsencrypt/) | 14.0.1.0.1 |  | Request SSL certificates from letsencrypt.org
 [mail_cleanup](mail_cleanup/) | 14.0.1.0.0 |  | Mark as read or delete mails after a set time
 [module_auto_update](module_auto_update/) | 14.0.1.0.2 |  | Automatically update Odoo modules
@@ -76,7 +77,7 @@ addon | version | maintainers | summary
 [module_prototyper](module_prototyper/) | 14.0.1.0.0 |  | Prototype your module.
 [nsca_client](nsca_client/) | 14.0.1.0.1 |  | Send passive alerts to monitor your Odoo application.
 [onchange_helper](onchange_helper/) | 14.0.1.0.2 |  | Technical module that ease execution of onchange in Python code
-[rpc_helper](rpc_helper/) | 14.0.1.1.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
+[rpc_helper](rpc_helper/) | 14.0.1.2.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
 [scheduler_error_mailer](scheduler_error_mailer/) | 14.0.1.2.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 14.0.2.0.0 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [sequence_python](sequence_python/) | 14.0.1.0.0 |  | Calculate a sequence number from a Python expression
