@@ -1,7 +1,7 @@
 # generated from manifests external_dependencies
 acme
 astor
-cryptography
+cryptography<23.2.0
 dataclasses
 dnspython
 josepy
@@ -9,5 +9,5 @@ odoorpc
 openpyxl
 openupgradelib
 pysftp
-sentry_sdk>=1.17.0
+sentry_sdk<=1.9.0
 unidecode
