@@ -1,13 +1,14 @@
 # generated from manifests external_dependencies
 acme<2.0.0
 astor
-cryptography
+cryptography==2.6.1
 dataclasses
 dnspython
 josepy
-lxml
 mako
 odoorpc
+openpyxl
 openupgradelib
+pygount
 pysftp
-sentry_sdk
+sentry_sdk<=1.9.0

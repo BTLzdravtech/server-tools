@@ -205,11 +205,6 @@ msgid "Followers"
 msgstr "关注者"
 
 #. module: auto_backup
-#: model:ir.model.fields,field_description:auto_backup.field_db_backup__message_channel_ids
-msgid "Followers (Channels)"
-msgstr "关注者(频道)"
-
-#. module: auto_backup
 #: model:ir.model.fields,field_description:auto_backup.field_db_backup__message_partner_ids
 msgid "Followers (Partners)"
 msgstr "关注者(业务伙伴)"
@@ -218,6 +213,11 @@ msgstr "关注者(业务伙伴)"
 #: model_terms:ir.ui.view,arch_db:auto_backup.view_backup_conf_form
 msgid "Go to Settings / Technical / Automation / Scheduled Actions."
 msgstr "点击   设置 / 技术 / 自动化 / 安排的动作。"
+
+#. module: auto_backup
+#: model:ir.model.fields,field_description:auto_backup.field_db_backup__has_message
+msgid "Has Message"
+msgstr ""
 
 #. module: auto_backup
 #: model_terms:ir.ui.view,arch_db:auto_backup.view_backup_conf_form
@@ -377,11 +377,6 @@ msgstr ""
 "时间等数据库具体备份方案。"
 
 #. module: auto_backup
-#: model:ir.model.fields,field_description:auto_backup.field_db_backup__smart_search
-msgid "Smart Search"
-msgstr ""
-
-#. module: auto_backup
 #: model:ir.model.fields,help:auto_backup.field_db_backup__name
 msgid "Summary of this backup process"
 msgstr "此备份过程的摘要"
@@ -479,6 +474,9 @@ msgstr "sftp.example.com"
 #: model:ir.model.fields.selection,name:auto_backup.selection__db_backup__backup_format__zip
 msgid "zip (includes filestore)"
 msgstr "zip（包括文件存储）"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "关注者(频道)"
 
 #~ msgid "If checked new messages require your attention."
 #~ msgstr "如果检查了新消息，需要您的注意。"

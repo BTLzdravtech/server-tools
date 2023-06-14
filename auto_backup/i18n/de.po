@@ -206,11 +206,6 @@ msgid "Followers"
 msgstr ""
 
 #. module: auto_backup
-#: model:ir.model.fields,field_description:auto_backup.field_db_backup__message_channel_ids
-msgid "Followers (Channels)"
-msgstr ""
-
-#. module: auto_backup
 #: model:ir.model.fields,field_description:auto_backup.field_db_backup__message_partner_ids
 msgid "Followers (Partners)"
 msgstr ""
@@ -220,6 +215,11 @@ msgstr ""
 msgid "Go to Settings / Technical / Automation / Scheduled Actions."
 msgstr ""
 "Gehen Sie zu Einstellungen / Technisch / Automation / Geplante Vorgänge"
+
+#. module: auto_backup
+#: model:ir.model.fields,field_description:auto_backup.field_db_backup__has_message
+msgid "Has Message"
+msgstr ""
 
 #. module: auto_backup
 #: model_terms:ir.ui.view,arch_db:auto_backup.view_backup_conf_form
@@ -377,11 +377,6 @@ msgid ""
 msgstr ""
 "Setzen Sie die Aktion auf aktiv und geben Sie an wie oft die Sicherungen "
 "erstellt werden soll."
-
-#. module: auto_backup
-#: model:ir.model.fields,field_description:auto_backup.field_db_backup__smart_search
-msgid "Smart Search"
-msgstr ""
 
 #. module: auto_backup
 #: model:ir.model.fields,help:auto_backup.field_db_backup__name
