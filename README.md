@@ -53,7 +53,7 @@ addon | version | maintainers | summary
 [base_sequence_option](base_sequence_option/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Alternative sequence options for specific models
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 14.0.1.0.1 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 14.0.1.0.1 |  | Add a technical user parameter on the company
-[base_time_parameter](base_time_parameter/) | 14.0.3.1.0 | [![appstogrow](https://github.com/appstogrow.png?size=30px)](https://github.com/appstogrow) [![nimarosa](https://github.com/nimarosa.png?size=30px)](https://github.com/nimarosa) | Time dependent parameters Adds the feature to define parameters with time based versions.
+[base_time_parameter](base_time_parameter/) | 14.0.3.1.1 | [![appstogrow](https://github.com/appstogrow.png?size=30px)](https://github.com/appstogrow) [![nimarosa](https://github.com/nimarosa.png?size=30px)](https://github.com/nimarosa) | Time dependent parameters Adds the feature to define parameters with time based versions.
 [base_time_window](base_time_window/) | 14.0.1.0.1 |  | Base model to handle time windows
 [base_video_link](base_video_link/) | 14.0.1.1.1 |  | Add the possibility to link video on record
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 14.0.1.1.2 |  | Adds more operators for view inheritance
@@ -74,6 +74,7 @@ addon | version | maintainers | summary
 [jsonifier_stored](jsonifier_stored/) | 14.0.1.0.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Pre-compute and store JSON data on any model
 [letsencrypt](letsencrypt/) | 14.0.1.0.2 |  | Request SSL certificates from letsencrypt.org
 [mail_cleanup](mail_cleanup/) | 14.0.1.0.0 |  | Mark as read or delete mails after a set time
+[model_read_only](model_read_only/) | 14.0.1.0.0 | [![ilyasProgrammer](https://github.com/ilyasProgrammer.png?size=30px)](https://github.com/ilyasProgrammer) | Model Read Only
 [module_analysis](module_analysis/) | 14.0.1.0.0 |  | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
 [module_auto_update](module_auto_update/) | 14.0.1.0.2 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 14.0.1.0.3 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
