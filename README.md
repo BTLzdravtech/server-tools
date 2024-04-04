@@ -42,7 +42,7 @@ addon | version | maintainers | summary
 [base_time_parameter](base_time_parameter/) | 15.0.1.0.0 | [![appstogrow](https://github.com/appstogrow.png?size=30px)](https://github.com/appstogrow) [![nimarosa](https://github.com/nimarosa.png?size=30px)](https://github.com/nimarosa) | Time dependent parameters Adds the feature to define parameters with time based versions.
 [base_time_window](base_time_window/) | 15.0.1.0.0 |  | Base model to handle time windows
 [base_translation_field_label](base_translation_field_label/) | 15.0.1.0.0 | [![GuillemCForgeFlow](https://github.com/GuillemCForgeFlow.png?size=30px)](https://github.com/GuillemCForgeFlow) | Shows the field label and optionally hides the Translated field value.
-[base_view_inheritance_extension](base_view_inheritance_extension/) | 15.0.2.0.2 |  | Adds more operators for view inheritance
+[base_view_inheritance_extension](base_view_inheritance_extension/) | 15.0.2.1.0 |  | Adds more operators for view inheritance
 [database_cleanup](database_cleanup/) | 15.0.1.1.0 |  | Database cleanup
 [datetime_formatter](datetime_formatter/) | 15.0.1.0.0 |  | Helper functions to give correct format to date[time] fields
 [dbfilter_from_header](dbfilter_from_header/) | 15.0.1.0.0 |  | Filter databases with HTTP headers
@@ -63,6 +63,7 @@ addon | version | maintainers | summary
 [scheduler_error_mailer](scheduler_error_mailer/) | 15.0.1.0.0 |  | Scheduler Error Mailer
 [sentry](sentry/) | 15.0.3.0.1 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [sequence_python](sequence_python/) | 15.0.1.0.0 |  | Calculate a sequence number from a Python expression
+[session_db](session_db/) | 15.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
 [tracking_manager](tracking_manager/) | 15.0.1.0.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 15.0.3.0.1 | [![StefanRijnhart](https://github.com/StefanRijnhart.png?size=30px)](https://github.com/StefanRijnhart) [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Performs a difference analysis between modules installed on two different Odoo instances
 
