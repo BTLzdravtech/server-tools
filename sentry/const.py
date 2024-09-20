@@ -69,12 +69,19 @@ def get_sentry_logging(level=DEFAULT_LOG_LEVEL):
     if level not in LOG_LEVEL_MAP:
         level = DEFAULT_LOG_LEVEL
 
-    return LoggingIntegration(
-        # Gather warnings into breadcrumbs regardless of actual logging level
-        level=logging.WARNING,
-        event_level=LOG_LEVEL_MAP[level],
-    )
+    event_level_value = logging.WARNING
+    if level == "debug":
+        event_level_value = logging.DEBUG
+    elif level == "info":
+        event_level_value = logging.INFO
+    elif level == "warn":
+        event_level_value = logging.WARNING
+    elif level == "error":
+        event_level_value = logging.ERROR
+    elif level == "critical":
+        event_level_value = logging.CRITICAL
 
+    return LoggingIntegration(level=LOG_LEVEL_MAP[level], event_level=event_level_value)
 
 def get_sentry_options():
     return [
