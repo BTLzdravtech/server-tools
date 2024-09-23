@@ -107,7 +107,7 @@ def initialize_sentry(config):
         options[option.key] = value
 
     if options["environment"] is None:
-        if os.getenv("CI") is "true":
+        if os.getenv("CI") == "true":
             options["environment"] = "jenkins-tests"
         else:
             db_name = config.get("db_name")
