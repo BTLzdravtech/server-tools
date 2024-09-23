@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 import logging
+import os
 import re
 import warnings
 from collections import abc
@@ -106,12 +107,18 @@ def initialize_sentry(config):
         options[option.key] = value
 
     if options["environment"] is None:
-        db_name = config.get("db_name")
-        regex_match_dev = re.search("^btlnet-(.*)-[0-9]+$", db_name)
-        if regex_match_dev and regex_match_dev.group(1):
-            options["environment"] = regex_match_dev.group(1)
+        if os.getenv("CI") is "true":
+            options["environment"] = "jenkins-tests"
         else:
-            options["environment"] = "production"
+            db_name = config.get("db_name")
+            regex_match_dev = re.search("^btlnet-(.*)-[0-9]+$", db_name)
+            if regex_match_dev and regex_match_dev.group(1):
+                options["environment"] = regex_match_dev.group(1)
+            else:
+                options["environment"] = "production"
+
+    if options["dsn"] is None and os.getenv("SENTRY_DSN") is not None:
+        options["dsn"] = os.getenv("SENTRY_DSN")
 
     exclude_loggers = const.split_multiple(
         config.get("sentry_exclude_loggers", const.DEFAULT_EXCLUDE_LOGGERS)
