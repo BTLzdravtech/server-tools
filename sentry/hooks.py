@@ -108,7 +108,7 @@ def initialize_sentry(config):
 
     if options["environment"] is None:
         db_name = config.get("db_name")
-        regex_match_dev = re.search("^btlnet\-(.*)\-[0-9]+$", db_name)
+        regex_match_dev = re.search("^btlnet\\-(.*)\\-[0-9]+$", db_name)
         if regex_match_dev and regex_match_dev.group(1):
             options["environment"] = regex_match_dev.group(1)
         else:
