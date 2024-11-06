@@ -1,4 +1,5 @@
 # Copyright 2022 Akretion (https://www.akretion.com).
+# Copyright 2024 Tecnativa - Víctor Martínez
 # @author Kévin Roche <kevin.roche@akretion.com>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 from odoo import Command
@@ -78,8 +79,8 @@ class TestTrackingManager(TransactionCase):
         self.assertEqual(len(self.messages), 1)
         tracking = self.messages.tracking_value_ids[0]
         self.assertEqual(len(tracking), 1)
-        self.assertEqual(tracking.old_value_text, "FOO")
-        self.assertEqual(tracking.new_value_text, "FOO; BAR")
+        self.assertEqual(tracking.old_value_char, "FOO")
+        self.assertEqual(tracking.new_value_char, "FOO, BAR")
 
     def test_m2m_delete_line(self):
         self.partner.write(
@@ -88,8 +89,8 @@ class TestTrackingManager(TransactionCase):
         self.assertEqual(len(self.messages), 1)
         tracking = self.messages.tracking_value_ids
         self.assertEqual(len(tracking), 1)
-        self.assertEqual(tracking.old_value_text, "FOO")
-        self.assertEqual(tracking.new_value_text, "")
+        self.assertEqual(tracking.old_value_char, "FOO")
+        self.assertEqual(tracking.new_value_char, "")
 
     def test_m2m_multi_line(self):
         self.partner.write(
@@ -109,8 +110,8 @@ class TestTrackingManager(TransactionCase):
         self.assertEqual(len(self.messages), 1)
         tracking = self.messages.tracking_value_ids
         self.assertEqual(len(tracking), 1)
-        self.assertEqual(tracking.old_value_text, "FOO")
-        self.assertEqual(tracking.new_value_text, "BAR; TOOH")
+        self.assertEqual(tracking.old_value_char, "FOO")
+        self.assertEqual(tracking.new_value_char, "BAR, TOOH")
 
     def test_o2m_create_indirectly(self):
         self.partner.write({"user_ids": [(Command.CREATE, 0, {"login": "1234567890"})]})
@@ -270,3 +271,11 @@ class TestTrackingManager(TransactionCase):
         self.assertEqual(len(self.messages), 1)
         self.assertEqual(self.messages.body.count("Change"), 0)
         self.assertEqual(self.messages.body.count("Delete"), 1)
+
+    def test_o2m_update_record(self):
+        self.env.ref("base.field_res_partner__child_ids").custom_tracking = True
+        child = self.env["res.partner"].create(
+            {"name": "Test child", "parent_id": self.partner.id}
+        )
+        child.write({"parent_id": False})
+        self.assertEqual(len(self.messages), 1)
