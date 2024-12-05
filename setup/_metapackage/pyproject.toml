@@ -1,12 +1,13 @@
 [project]
 name = "odoo-addons-oca-server-tools"
-version = "17.0.20241024.0"
+version = "17.0.20241203.1"
 dependencies = [
     "odoo-addon-auditlog>=17.0dev,<17.1dev",
     "odoo-addon-base_cron_exclusion>=17.0dev,<17.1dev",
     "odoo-addon-base_exception>=17.0dev,<17.1dev",
     "odoo-addon-base_m2m_custom_field>=17.0dev,<17.1dev",
     "odoo-addon-base_partition>=17.0dev,<17.1dev",
+    "odoo-addon-base_sparse_field_list_support>=17.0dev,<17.1dev",
     "odoo-addon-base_technical_user>=17.0dev,<17.1dev",
     "odoo-addon-base_view_inheritance_extension>=17.0dev,<17.1dev",
     "odoo-addon-database_cleanup>=17.0dev,<17.1dev",
@@ -17,6 +18,7 @@ dependencies = [
     "odoo-addon-module_auto_update>=17.0dev,<17.1dev",
     "odoo-addon-module_change_auto_install>=17.0dev,<17.1dev",
     "odoo-addon-onchange_helper>=17.0dev,<17.1dev",
+    "odoo-addon-rpc_helper>=17.0dev,<17.1dev",
     "odoo-addon-scheduler_error_mailer>=17.0dev,<17.1dev",
     "odoo-addon-sentry>=17.0dev,<17.1dev",
     "odoo-addon-server_action_logging>=17.0dev,<17.1dev",
