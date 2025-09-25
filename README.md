@@ -30,10 +30,12 @@ addon | version | maintainers | summary
 [base_fontawesome](base_fontawesome/) | 18.0.1.0.0 |  | Up to date Fontawesome resources.
 [base_force_record_noupdate](base_force_record_noupdate/) | 18.0.1.0.0 |  | Manually force noupdate=True on models
 [base_m2m_custom_field](base_m2m_custom_field/) | 18.0.1.0.0 |  | Customizations of Many2many
+[base_model_restrict_update](base_model_restrict_update/) | 18.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Update Restrict Model
 [base_name_search_improved](base_name_search_improved/) | 18.0.1.1.0 |  | Friendlier search when typing in relation fields
 [base_partition](base_partition/) | 18.0.1.0.0 |  | Base module that provide the partition method on all models
 [base_remote](base_remote/) | 18.0.1.0.0 |  | Remote Base
 [base_search_fuzzy](base_search_fuzzy/) | 18.0.1.0.0 |  | Fuzzy search with the PostgreSQL trigram extension
+[base_sequence_option](base_sequence_option/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Alternative sequence options for specific models
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 18.0.1.0.0 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 18.0.1.0.1 |  | Add a technical user parameter on the company
 [base_time_window](base_time_window/) | 18.0.1.1.0 |  | Base model to handle time windows
