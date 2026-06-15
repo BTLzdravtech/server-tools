@@ -40,7 +40,7 @@ addon | version | maintainers | summary
 [base_name_search_improved](base_name_search_improved/) | 18.0.1.1.1 |  | Friendlier search when typing in relation fields
 [base_partition](base_partition/) | 18.0.1.0.1 |  | Base module that provide the partition method on all models
 [base_remote](base_remote/) | 18.0.1.0.0 |  | Remote Base
-[base_search_fuzzy](base_search_fuzzy/) | 18.0.1.0.0 |  | Fuzzy search with the PostgreSQL trigram extension
+[base_search_fuzzy](base_search_fuzzy/) | 18.0.2.0.0 |  | Fuzzy search with the PostgreSQL trigram extension
 [base_sequence_option](base_sequence_option/) | 18.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Alternative sequence options for specific models
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 18.0.1.0.0 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 18.0.1.0.1 |  | Add a technical user parameter on the company
@@ -55,13 +55,14 @@ addon | version | maintainers | summary
 [excel_import_export](excel_import_export/) | 18.0.1.0.0 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Base module for developing Excel import/export/report
 [fetchmail_attach_from_folder](fetchmail_attach_from_folder/) | 18.0.2.0.0 | <a href='https://github.com/NL66278'><img src='https://github.com/NL66278.png' width='32' height='32' style='border-radius:50%;' alt='NL66278'/></a> | Attach mails in an IMAP folder to existing objects
 [fetchmail_notify_error_to_sender](fetchmail_notify_error_to_sender/) | 18.0.1.0.0 |  | If fetching mails gives error, send an email to sender
+[field_vector](field_vector/) | 18.0.1.0.0 | <a href='https://github.com/lmignon'><img src='https://github.com/lmignon.png' width='32' height='32' style='border-radius:50%;' alt='lmignon'/></a> | New specialized field to store vector data
 [html_text](html_text/) | 18.0.1.0.0 |  | Generate excerpts from any HTML field
 [iap_alternative_provider](iap_alternative_provider/) | 18.0.1.0.0 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Base module for providing alternative provider for iap apps
 [jsonifier](jsonifier/) | 18.0.1.1.1 |  | JSON-ify data for all models
 [mail_cleanup](mail_cleanup/) | 18.0.1.0.2 |  | Mark as read or delete mails after a set time
 [mail_template_attachment_per_lang](mail_template_attachment_per_lang/) | 18.0.1.0.0 |  | Set language specific attachments on mail templates.
 [module_analysis](module_analysis/) | 18.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add analysis tools regarding installed modules to know which installed modules comes from Odoo Core, OCA, or are custom modules
-[module_auto_update](module_auto_update/) | 18.0.1.0.1 |  | Automatically update Odoo modules
+[module_auto_update](module_auto_update/) | 18.0.1.0.2 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 18.0.1.0.3 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Customize auto installables modules by configuration
 [odoo_test_xmlrunner](odoo_test_xmlrunner/) | 18.0.1.0.0 |  | This module override Odoo testing method to run them with xmlrunner tool.
 [onchange_helper](onchange_helper/) | 18.0.1.0.1 |  | Technical module that ease execution of onchange in Python code
