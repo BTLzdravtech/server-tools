@@ -69,6 +69,7 @@ def get_sentry_logging(level=DEFAULT_LOG_LEVEL):
     if level not in LOG_LEVEL_MAP:
         level = DEFAULT_LOG_LEVEL
 
+    # ------------------------ BTL Code Changes - START ------------------------------ #
     event_level_value = logging.WARNING
     if level == "debug":
         event_level_value = logging.DEBUG
@@ -82,7 +83,7 @@ def get_sentry_logging(level=DEFAULT_LOG_LEVEL):
         event_level_value = logging.CRITICAL
 
     return LoggingIntegration(level=LOG_LEVEL_MAP[level], event_level=event_level_value)
-
+    # ---------------------------------- END ----------------------------------------- #
 
 def get_sentry_options():
     res = [
