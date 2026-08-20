@@ -1,4 +1,5 @@
 # generated from manifests external_dependencies
+# BTL Code Changes - removed cryptography, dataclasses
 numpy
 odoorpc
 openupgradelib

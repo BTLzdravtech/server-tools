@@ -23,7 +23,7 @@
     "installable": True,
     "depends": ["base"],
     "external_dependencies": {
-        "python": ["odoorpc", "openupgradelib"],
+        "python": ["odoorpc", "openupgradelib"],  # BTL Code Changes - removed dataclasses
     },
     "license": "AGPL-3",
 }
