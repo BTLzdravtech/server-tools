@@ -1,4 +1,7 @@
 
+[![Support the OCA](https://odoo-community.org/readme-banner-image)](https://odoo-community.org/get-involved?utm_source=repo-readme)
+
+# server-tools
 [![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/server-tools&target_branch=18.0)
 [![Pre-commit Status](https://github.com/OCA/server-tools/actions/workflows/pre-commit.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-tools/actions/workflows/pre-commit.yml?query=branch%3A18.0)
 [![Build Status](https://github.com/OCA/server-tools/actions/workflows/test.yml/badge.svg?branch=18.0)](https://github.com/OCA/server-tools/actions/workflows/test.yml?query=branch%3A18.0)
@@ -6,8 +9,6 @@
 [![Translation Status](https://translation.odoo-community.org/widgets/server-tools-18-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/server-tools-18-0/?utm_source=widget)
 
 <!-- /!\ do not modify above this line -->
-
-# server-tools
 
 server-tools
 
@@ -31,9 +32,9 @@ addon | version | maintainers | summary
 [autovacuum_message_attachment](autovacuum_message_attachment/) | 18.0.1.0.1 | <a href='https://github.com/florian-dacosta'><img src='https://github.com/florian-dacosta.png' width='32' height='32' style='border-radius:50%;' alt='florian-dacosta'/></a> | Automatically delete old mail messages and attachments
 [base_conditional_image](base_conditional_image/) | 18.0.1.0.0 |  | This module extends the functionality to support conditional images
 [base_cron_exclusion](base_cron_exclusion/) | 18.0.1.0.1 | <a href='https://github.com/LoisRForgeFlow'><img src='https://github.com/LoisRForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='LoisRForgeFlow'/></a> <a href='https://github.com/ChrisOForgeFlow'><img src='https://github.com/ChrisOForgeFlow.png' width='32' height='32' style='border-radius:50%;' alt='ChrisOForgeFlow'/></a> | Allow you to select scheduled actions that should not run simultaneously.
-[base_exception](base_exception/) | 18.0.1.3.1 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
+[base_exception](base_exception/) | 18.0.2.0.0 | <a href='https://github.com/hparfr'><img src='https://github.com/hparfr.png' width='32' height='32' style='border-radius:50%;' alt='hparfr'/></a> <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | This module provide an abstract model to manage customizable exceptions to be applied on different models (sale order, invoice, ...)
 [base_fontawesome](base_fontawesome/) | 18.0.2.0.0 |  | Up to date Fontawesome resources.
-[base_fontawesome_web_editor](base_fontawesome_web_editor/) | 18.0.1.0.0 |  | Integration between base_fontawesome and web_editor for FontAwesome >= 6.7.2 support.
+[base_fontawesome_web_editor](base_fontawesome_web_editor/) | 18.0.1.0.1 |  | Integration between base_fontawesome and web_editor for FontAwesome >= 6.7.2 support.
 [base_force_record_noupdate](base_force_record_noupdate/) | 18.0.1.0.0 |  | Manually force noupdate=True on models
 [base_m2m_custom_field](base_m2m_custom_field/) | 18.0.1.0.0 |  | Customizations of Many2many
 [base_model_restrict_update](base_model_restrict_update/) | 18.0.1.0.0 | <a href='https://github.com/yostashiro'><img src='https://github.com/yostashiro.png' width='32' height='32' style='border-radius:50%;' alt='yostashiro'/></a> <a href='https://github.com/aungkokolin1997'><img src='https://github.com/aungkokolin1997.png' width='32' height='32' style='border-radius:50%;' alt='aungkokolin1997'/></a> | Update Restrict Model
@@ -43,6 +44,7 @@ addon | version | maintainers | summary
 [base_remote](base_remote/) | 18.0.1.0.0 |  | Remote Base
 [base_search_fuzzy](base_search_fuzzy/) | 18.0.2.0.0 |  | Fuzzy search with the PostgreSQL trigram extension
 [base_sequence_option](base_sequence_option/) | 18.0.1.0.1 | <a href='https://github.com/kittiu'><img src='https://github.com/kittiu.png' width='32' height='32' style='border-radius:50%;' alt='kittiu'/></a> | Alternative sequence options for specific models
+[base_sequence_template](base_sequence_template/) | 18.0.1.0.0 |  | Create a sequence template that can generate sequences for companies
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 18.0.1.0.0 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 18.0.1.0.1 |  | Add a technical user parameter on the company
 [base_temporary_action](base_temporary_action/) | 18.0.1.0.0 |  | This addon allows to create temporary actions
@@ -50,7 +52,7 @@ addon | version | maintainers | summary
 [base_time_window](base_time_window/) | 18.0.1.1.1 |  | Base model to handle time windows
 [base_url](base_url/) | 18.0.1.0.0 | <a href='https://github.com/sebastienbeau'><img src='https://github.com/sebastienbeau.png' width='32' height='32' style='border-radius:50%;' alt='sebastienbeau'/></a> | Abstract module/mixin to manage clean url on odoo record
 [base_view_inheritance_extension](base_view_inheritance_extension/) | 18.0.1.0.3 | <a href='https://github.com/hbrunn'><img src='https://github.com/hbrunn.png' width='32' height='32' style='border-radius:50%;' alt='hbrunn'/></a> | Adds more operators for view inheritance
-[bus_alt_connection](bus_alt_connection/) | 18.0.1.0.0 |  | Needed when using PgBouncer as a connection pooler
+[bus_alt_connection](bus_alt_connection/) | 18.0.1.0.1 |  | Needed when using PgBouncer as a connection pooler
 [database_autovacuum_tuning](database_autovacuum_tuning/) | 18.0.1.0.1 |  | Scheduled checks for Odoo autovacuum thresholds and scale factors
 [database_cleanup](database_cleanup/) | 18.0.1.0.2 |  | Database cleanup
 [database_size](database_size/) | 18.0.1.0.2 |  | Database Size
