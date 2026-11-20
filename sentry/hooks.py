@@ -129,8 +129,9 @@ def initialize_sentry(config):
 
     # ------------------------ BTL Code Changes - START ------------------------------ #
     if options["environment"] is None:
-        db_name = config.get("db_name")
-        regex_match_dev = re.search("^btlnet\\-(.*)\\-[0-9]+$", db_name)
+        # `config` is the [sentry] section here, not odoo.tools.config; db_name is a list since 19.0.
+        db_names = odoo.tools.config["db_name"]
+        regex_match_dev = re.search("^btlnet\\-(.*)\\-[0-9]+$", db_names[0]) if db_names else None
         if regex_match_dev and regex_match_dev.group(1):
             options["environment"] = regex_match_dev.group(1)
         else:
