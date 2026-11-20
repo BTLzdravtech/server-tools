@@ -102,6 +102,11 @@ class ThrowAwayCache:
         for env in self._transaction.envs:
             self._original_field_cache_memos[env] = dict(env._field_cache_memo)
             env._field_cache_memo.clear()
+            # Environment._field_dirty is a cached_property bound to the original
+            # transaction.field_dirty. If kept, a flush inside this context sees the
+            # original dirty ids but looks their values up in the empty replacement
+            # field_data, and fails with "Could not find all values of ...".
+            env.__dict__.pop("_field_dirty", None)
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
@@ -114,6 +119,7 @@ class ThrowAwayCache:
         # are read-only objects, so we cannot patch back the actual stashed copies.
         for env in self._transaction.envs:
             env._field_cache_memo.clear()
+            env.__dict__.pop("_field_dirty", None)
             if cache_memo := self._original_field_cache_memos.get(env):
                 for key, value in cache_memo.items():
                     env._field_cache_memo[key] = value
